@@ -11,6 +11,7 @@ import java.util.ArrayList;
  * Класса для запуска сервера и создания соединения
  * connections - список соединений
  * PORT - порт сервера
+ * clients_count - количество клиента в чате, статичное поле
  */
 public class ChatServer implements TCPConnectionEvents {
 
@@ -22,10 +23,12 @@ public class ChatServer implements TCPConnectionEvents {
 
     private static final String IP = "46.73.9.86";
     static final int PORT = 3443;
+    private static int clients_count = 0;
 
     private ChatServer(){
         System.out.println("Server running...");
         try (ServerSocket serverSocket = new ServerSocket(PORT)){
+
             while(true){
                 try {
                     new TCPConnection(this, serverSocket.accept());
@@ -43,6 +46,8 @@ public class ChatServer implements TCPConnectionEvents {
     public synchronized void onConnectionReady(TCPConnection tcpConnection) {
         connections.add(tcpConnection);
         sendToAllConnections("Client connected: " + tcpConnection);
+        clients_count++;
+        sendToAllConnections("Клиентов в чате = " + clients_count);
     }
 
     @Override
@@ -54,6 +59,8 @@ public class ChatServer implements TCPConnectionEvents {
     public synchronized void onDisconnect(TCPConnection tcpConnection) {
         connections.remove(tcpConnection);
         sendToAllConnections("Client connected: " + tcpConnection);
+        clients_count--;
+        sendToAllConnections("Клиентов в чате = " + clients_count);
     }
 
     @Override

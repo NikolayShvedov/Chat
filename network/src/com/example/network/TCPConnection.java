@@ -1,5 +1,7 @@
 package com.example.network;
 
+import com.example.server.ChatServer;
+
 import java.io.*;
 import java.net.Socket;
 import java.nio.charset.Charset;

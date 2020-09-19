@@ -7,6 +7,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
 import java.io.IOException;
 
 /**
@@ -37,12 +39,13 @@ public class ClientWindow extends JFrame implements ActionListener, TCPConnectio
     }
 
     private final JTextArea chatWindow = new JTextArea();
-    private final JTextField nickName = new JTextField();
-    private final JTextField inputMessage = new JTextField();
+    private final JTextField nickName = new JTextField("Введите ваше имя: ");
+    private final JTextField inputMessage = new JTextField("Введите ваше сообщение: ");
 
     private TCPConnection connection;
 
     private ClientWindow(int WIDTH, int HEIGHT){
+        setTitle("Client");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setSize(WIDTH, HEIGHT);
         setLocationRelativeTo(null);
@@ -51,11 +54,27 @@ public class ClientWindow extends JFrame implements ActionListener, TCPConnectio
         chatWindow.setEditable(false);
         chatWindow.setLineWrap(true);
         add(chatWindow, BorderLayout.CENTER);
-
+        JPanel bottomPanel = new JPanel(new BorderLayout());
+        add(bottomPanel, BorderLayout.SOUTH);
         inputMessage.addActionListener(this);
-        add(nickName, BorderLayout.NORTH);
-        add(inputMessage, BorderLayout.SOUTH);
+        bottomPanel.add(nickName, BorderLayout.WEST);
+        bottomPanel.add(inputMessage, BorderLayout.CENTER);
 
+        setVisible(true);
+        // при фокусе поле сообщения очищается
+        inputMessage.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                inputMessage.setText("");
+            }
+        });
+        // при фокусе поле сообщения очищается
+        nickName.addFocusListener(new FocusAdapter() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                nickName.setText("");
+            }
+        });
         setVisible(true);
         try {
             connection = new TCPConnection(this, SERVER_HOST, PORT);
@@ -63,7 +82,6 @@ public class ClientWindow extends JFrame implements ActionListener, TCPConnectio
             printMessage("Connection exception: " + e);
         }
     }
-
 
     @Override
     public void actionPerformed(ActionEvent e) {

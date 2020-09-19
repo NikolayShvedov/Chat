@@ -31,14 +31,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/lab13_jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -56,7 +56,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ClientWindow" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.client.ClientWindow" />
       <module name="client" />
       <extension name="coverage">
@@ -69,9 +69,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.ClientWindow" />
+      <item itemvalue="Application.ChatServer" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClientWindow" />
         <item itemvalue="Application.ChatServer" />
       </list>
     </recent_temporary>
@@ -89,6 +92,14 @@
       <workItem from="1600238298190" duration="1335000" />
       <workItem from="1600254730169" duration="319000" />
       <workItem from="1600356558531" duration="12382000" />
+      <workItem from="1600370264437" duration="329000" />
+      <workItem from="1600409927029" duration="178000" />
+      <workItem from="1600429099145" duration="275000" />
+      <workItem from="1600430245133" duration="1549000" />
+      <workItem from="1600435591690" duration="269000" />
+      <workItem from="1600490590435" duration="3529000" />
+      <workItem from="1600495467698" duration="515000" />
+      <workItem from="1600497235724" duration="92000" />
     </task>
     <servers />
   </component>
@@ -100,6 +111,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1600362240061" />
+    <state x="-135" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600429380788">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="-135" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1600429380788" />
     <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1600365570729">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -108,37 +123,37 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="148" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1600369508390" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1600368600512">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1600430465670">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600368600512" />
-    <state width="1306" height="179" key="GridCell.Tab.0.bottom" timestamp="1600369576809">
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600430465670" />
+    <state width="1323" height="180" key="GridCell.Tab.0.bottom" timestamp="1600495993120">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600369576809" />
-    <state width="1306" height="179" key="GridCell.Tab.0.center" timestamp="1600369576809">
+    <state width="1323" height="180" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600495993120" />
+    <state width="1323" height="180" key="GridCell.Tab.0.center" timestamp="1600495993120">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600369576809" />
-    <state width="1306" height="179" key="GridCell.Tab.0.left" timestamp="1600369576809">
+    <state width="1323" height="180" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600495993120" />
+    <state width="1323" height="180" key="GridCell.Tab.0.left" timestamp="1600495993120">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600369576809" />
-    <state width="1306" height="179" key="GridCell.Tab.0.right" timestamp="1600369576809">
+    <state width="1323" height="180" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600495993120" />
+    <state width="1323" height="180" key="GridCell.Tab.0.right" timestamp="1600495993120">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1306" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600369576809" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1600369535323">
+    <state width="1323" height="180" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600495993120" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1600491711518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600369535323" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1600254737016">
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600491711518" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1600490616525">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1600254737016" />
-    <state x="66" y="0" key="new project wizard" timestamp="1600238533554">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1600490616525" />
+    <state x="66" y="0" key="new project wizard" timestamp="1600409995202">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="66" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1600238533554" />
+    <state x="66" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1600409995202" />
   </component>
 </project>
